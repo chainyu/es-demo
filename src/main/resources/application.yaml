@@ -1,0 +1,8 @@
+spring:
+  data:
+    elasticsearch:
+      cluster-name: es-test
+      cluster-nodes:
+es:
+  index.name: test_item_ik
+  type.name: ite_mdoc

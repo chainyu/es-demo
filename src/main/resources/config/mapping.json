@@ -1,0 +1,129 @@
+{
+	"properties": {
+		"store_id": {
+			"type": "long",
+			"store": "true",
+			"index": true
+		},
+		"channel_id": {
+			"type": "long",
+			"store": "true",
+			"index": true
+		},
+		"code": {
+			"type": "keyword",
+			"store": "true",
+			"index": true,
+			"copy_to": "search_text"
+		},
+		"title": {
+			"type": "text",
+			"store": "true",
+			"index": true,
+			"copy_to": "search_text"
+		},
+		"subtitle": {
+			"type": "text",
+			"store": "false",
+			"index": true,
+			"copy_to": "search_text"
+		},
+		"list_price": {
+			"type": "double",
+			"store": "true",
+			"index": false
+		},
+		"sale_price": {
+			"type": "double",
+			"store": "true",
+			"index": true
+		},
+		"style": {
+			"type": "keyword",
+			"store": "false",
+			"index": true
+		},
+		"custom_url": {
+			"type": "keyword",
+			"store": "true",
+			"index": false
+		},
+		"list_time": {
+			"type": "date",
+			"store": "false",
+			"index": false
+		},
+		"active_start_time": {
+			"type": "date",
+			"store": "true",
+			"index": true
+		},
+		"active_end_time": {
+			"type": "date",
+			"store": "true",
+			"index": false
+		},
+		"last_modified": {
+			"type": "date",
+			"store": "false",
+			"index": false
+		},
+		"keywords": {
+			"type": "text",
+			"store": "false",
+			"index": true,
+			"analyzer": "ik_pinyin",
+			"copy_to": "search_text"
+		},
+
+		"image_alt": {
+			"type": "keyword",
+			"store": "true",
+			"index": false
+		},
+
+		"sales": {
+			"type": "integer",
+			"store": "true",
+			"index": false
+		},
+		"rate": {
+			"type": "double",
+			"store": "true",
+			"index": false
+		},
+		"review": {
+			"type": "integer",
+			"store": "true",
+			"index": false
+		},
+		"view": {
+			"type": "integer",
+			"store": "true",
+			"index": false
+		},
+		"favorite": {
+			"type": "integer",
+			"store": "true",
+			"index": false
+		},
+		"stock": {
+			"type": "integer",
+			"store": "true",
+			"index": false
+		},
+
+		"search_text": {
+			"type": "text",
+			"store": "false",
+			"index": true,
+			"analyzer": "ik_pinyin"
+		},
+		"suggestion": {
+			"type": "completion",
+			"analyzer": "ik_pinyin",
+			"search_analyzer": "ik_pinyin"
+		}
+	},
+	"dynamic": "true"
+}
