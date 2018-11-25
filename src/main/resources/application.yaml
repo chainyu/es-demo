@@ -2,7 +2,7 @@ spring:
   data:
     elasticsearch:
       cluster-name: es-test
-      cluster-nodes:
+      cluster-nodes: localhost:9301,localhost:9302,localhost:9303
 es:
-  index.name: test_item_ik
-  type.name: ite_mdoc
+  index.name: test_item
+  type.name: item

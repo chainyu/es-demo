@@ -23,8 +23,8 @@ public class EsDemoApplicationTests {
 		ItemDocument itemDocument = new ItemDocument();
 		itemDocument.setId(id);
 		itemDocument.setTitle("一双帅掉渣的滑板鞋" + id);
-		boolean isSaved = itemElasticSearchService.save(itemDocument);
-		Assert.assertTrue("保存成功", isSaved);
+		String index = itemElasticSearchService.save(itemDocument);
+		Assert.assertEquals(String.valueOf(id), index);
 		testFindById(id);
 	}
 

@@ -17,7 +17,7 @@ import java.util.List;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Document(indexName = "saas_test_item", type = "store", createIndex = false)
+@Document(indexName = "#{itemElasticSearchServiceImpl.indexName}", type = "#{itemElasticSearchServiceImpl.typeName}", createIndex = false)
 @JsonNaming(PropertyNamingStrategy.SnakeCaseStrategy.class)
 public class ItemDocument implements Serializable{
 
