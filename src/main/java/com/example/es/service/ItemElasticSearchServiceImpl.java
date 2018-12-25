@@ -23,12 +23,12 @@ import java.util.stream.Collectors;
 
 import static java.util.Arrays.asList;
 
-@Service
+/*@Service*/
 public class ItemElasticSearchServiceImpl implements ItemElasticSearchService {
 
     private Logger LOGGER = LoggerFactory.getLogger(ItemElasticSearchServiceImpl.class);
 
-    @Resource
+    /*@Resource*/
     private ElasticsearchTemplate elasticsearchTemplate;
 
     /**

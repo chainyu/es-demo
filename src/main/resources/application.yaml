@@ -1,8 +1,8 @@
-spring:
-  data:
-    elasticsearch:
-      cluster-name: es-test
-      cluster-nodes: localhost:9301,localhost:9302,localhost:9303
+#spring:
+#  data:
+#    elasticsearch:
+#      cluster-name: es-test
+#     cluster-nodes: localhost:9301,localhost:9302,localhost:9303
 es:
   index.name: test_item
   type.name: item
